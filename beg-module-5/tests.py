@@ -33,6 +33,22 @@ class Tests(unittest.TestCase):
         for i in range(len(a)):
             self.assertAlmostEqual(f[i], a[i])
         self.assertAlmostEqual(g, 58474893.85028187)
+    def test_mine(self, f):
+        self.assertAlmostEqual(f[0], 0)
+        self.assertAlmostEqual(f[1], 0.84147098)
+        self.assertAlmostEqual(f[8], 0.98935825)
+        self.assertAlmostEqual(f[9], 0.41211849)
+        
+    def test_mine2(self, f):
+        self.assertEquals(f[0], True)
+        self.assertEquals(f[1], False)
+        self.assertEquals(f[2], True)
+        self.assertEquals(f[3], True)
+        self.assertEquals(f[4], True)
+        self.assertEquals(f[5], False)
+
+
+
 
 
 ########## TESTS ##########
